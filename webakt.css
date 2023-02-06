@@ -1,0 +1,264 @@
+*{
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+h1{
+    color: #ffffff;
+}
+
+h2{
+    color: #ffffff;
+}
+
+h2 img{
+    background-color: white;
+}
+
+h3{
+    color:#7ac2f5;
+}
+
+#editbod{
+    background-color: #6666;
+}
+
+input{
+    color: #666;
+    background-color: aliceblue;
+}
+
+select{
+    color: #666;
+    background-color: aliceblue;
+}
+
+textarea{
+    background-color: aliceblue;
+}
+
+.tlacitko{
+    background-color: #0078cd;
+    color: white;
+}
+
+.tlacitko:hover{
+    background-color:#57b9ff;
+}
+
+.formular{
+    background-color: white;
+}
+
+.formular h2{
+    background-color: #0078cd;
+}
+
+.volbysez a{
+    background-color: #d6ecff;
+}
+
+.seznam th{
+    background-color: #7bc2f5;
+    color: white;
+}
+
+.seznam tr:hover{
+    background-color: #7bc2f5;
+}
+
+.cookiesnas{
+    background-color: #00365c;
+}
+
+.cookiesnas p{
+    color:white;
+}
+
+.bcg_bila{
+    background-color: #ffffff;
+}
+
+.bcg_seda{
+    background-color: #ecebe8;
+}
+
+.bcg_bledemodra{
+    background-color: #7bc2f5;
+}
+
+.bcg_tmavomodra{
+    background-color: #005897;
+}
+
+.bcg_transparent{
+    background-color: transparent !important;
+}
+
+.bcg_bila3{
+    background-color: #ffffffc0;
+}
+
+.bcg_seda3{
+    background-color: #ecebe8c0;
+}
+
+.bcg_bledemodra3{
+    background-color: #7bc2f5c0;
+}
+
+.bcg_tmavomodra3{
+    background-color: #9d8475cc;
+}
+
+.bcg_bila2{
+    background-color: #ffffff80;
+}
+
+.bcg_seda2{
+    background-color: #ecebe880;
+}
+
+.bcg_bledemodra2{
+    background-color: #7bc2f580;
+}
+
+.bcg_tmavomodra2{
+    background-color: #00589780;
+}
+
+.bcg_bila1{
+    background-color: #ffffff20;
+}
+
+.bcg_seda1{
+    background-color: #ecebe820;
+}
+
+.bcg_bledemodra1{
+    background-color: #7bc2f520;
+}
+
+.bcg_tmavomodra1{
+    background-color: #00589720;
+}
+
+.bcg_pozadi{
+    background: fixed;
+    background-image: url(./img/pozadi.jpg);
+}
+
+.col_bila{
+    color: #ffffff;
+}
+
+.col_seda{
+    color: #bfbebb;
+}
+
+.col_bledemodra{
+    color: #7bc2f5;
+}
+
+.col_tmavomodra{
+    color: #005897;
+}
+
+.col_transparent{
+    color: transparent !important;
+}
+
+.bor_bila{
+    border:1px solid #ffffff;
+}
+
+.bor_seda{
+    border:1px solid #ecebe8;
+}
+
+.bor_bledemodra{
+    border:1px solid #7bc2f5;
+}
+
+.bor_tmavomodra{
+    border:1px solid #005897;
+}
+
+.bor_transparent{
+    border:none;
+}
+
+.block.logo{
+    background-color: transparent;
+}
+
+.block.menu{
+    background:transparent;
+}
+
+.menu_pas a{
+    color:white;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in;
+}
+
+.menu_pas a:hover{
+    color: #e1971a;
+}
+
+.block_pata{
+    background-color: #005897;
+}
+
+.block_pata a{
+    color: #ffffff;
+}
+
+.pridejblok{
+}
+
+.upravblok{
+}
+
+
+.pridejpole{
+}
+
+
+.upravpole{
+}
+
+.pridejprvek{
+}
+
+.upravprvek{
+}
+
+.ikoedit{
+    background-color: #f3cc3d85;
+}
+
+.editstranka{
+    background-color: #f3cc3d;
+}
+
+.nabidka table tr:hover{
+    background-color:#ecebe8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
