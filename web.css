@@ -460,6 +460,7 @@ td .volbysez img {
 .seznam {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
 }
 
 .seznam th {
