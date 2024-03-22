@@ -50,7 +50,9 @@ class koncert_tem extends template
         echo '              <textarea name="kon_text">' . $param["data"][0]["kon"]->text . '</textarea>';
         echo '              <div class="upload" jmp="koncert" pre="koncert" fce="obrazekpole" ondrop="nahrajSoubor(event);"></div>';
         echo '              <div class="fotoclanekedi" id="fotoclanek">';
-        if(!array_key_exists("foto",$param)){$param["foto"] = array();}
+        if (!array_key_exists("foto", $param) || !is_array($param['foto'])) {
+            $param["foto"] = [];
+        }
         foreach ($param["foto"] as $foto) {
             echo '<img src="img/' . $foto["sou"]->celaCesta . '" fotoid="' . $foto["sou"]->id . '">';
         }
@@ -86,29 +88,31 @@ class koncert_tem extends template
                 echo '</div>';
         */
         foreach ($param["data"] as $rad) {
-            echo '<div class="pole pole1 poleM bcg_bila stin pole_v4">';
+            echo '<div class="pole pole1 poleM bcg_bila stin pole_v3">';
 
             echo '<div class="koncert" >';
             echo '<a href = "?koncert/vypisdet/id=' . $rad["kon"]->id . '"></a>';
             echo '<div class="texty">';
-            echo '<h2>' . $rad["kon"]->datum .' '.$rad["kon"]->cas. '</h2>';
+            echo '<h2>' . $rad["kon"]->datum . ' ' . $rad["kon"]->cas . '</h2>';
             echo '<div class="misto">' . $rad['kon']->misto . '</div>';
 
             echo '<div class="text">' . $rad['kon']->text . '</div>';
             echo '</div>';
+            echo '<div class="koncert_foto">';
             if (is_array($rad["kon"]->fotky)) {
                 echo '<img src="img/' . $rad["kon"]->fotky[0]["sou"]->celaCesta . '" />';
             }
+            echo '</div>';
             echo '<div class="fc"></div>';
             echo '</div>';
             echo '</div>';
         }
 //        echo '</div>';
         echo '<div class="strankovac">';
-        if($param["str"] > 1){
-            echo '<a href="?koncert/vypis/str='.($param["str"]-1).'#oblasti">PŘEDCHOZÍ</a>';
+        if ($param["str"] > 1) {
+            echo '<a href="?koncert/vypis/str=' . ($param["str"] - 1) . '#oblasti">PŘEDCHOZÍ</a>';
         }
-        echo '<a href="?koncert/vypis/str='.($param["str"]+1).'#oblasti">DALŠÍ</a>';
+        echo '<a href="?koncert/vypis/str=' . ($param["str"] + 1) . '#oblasti">DALŠÍ</a>';
         echo '</div>';
         echo '</div>';
         echo '</div>';

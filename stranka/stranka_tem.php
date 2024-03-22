@@ -24,6 +24,9 @@ class stranka_tem {
         echo '          <div class="pole pole1 poleL">';
         echo '              <a href="?stranka/obsah/typ=T"><img src="./img/logo.png" class="logo" /></a>';
         echo '              <div class="menu_pas">';
+        if(!$param || !array_key_exists('menhor',$param) || !is_array($param['menhor'])){
+            $param['menhor'] = [];
+        }
         foreach ($param["menhor"] as $menu) {
             $target = "";
             if($menu["men"]->odkaz && $menu["men"]->url){
@@ -45,6 +48,9 @@ class stranka_tem {
         echo '      <div class="container">';
         echo '          <div class="pole pole1 poleL">';
         echo '              <div class="menu_pas">';
+        if(!$param || !array_key_exists('mendol',$param) || !is_array($param['mendol'])){
+            $param['mendol'] = [];
+        }
         foreach ($param["mendol"] as $menu) {
             echo '<a href="' . $menu["men"]->odkaz . '">' . $menu["men"]->text . '</a>';
         }
@@ -72,6 +78,9 @@ class stranka_tem {
 
         echo '      <div class="pole pole4 poleS">';
         echo '          <h3>Nabídka</h3>';
+        if(!$param || !array_key_exists('nabidka',$param) || !is_array($param['nabidka'])){
+            $param['nabidka'] = [];
+        }
         foreach ($param["nabidka"] as $pol) {
             echo '<a href="' . $pol["men"]->odkaz . '">' . $pol["men"]->text . '</a>';
         }

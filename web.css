@@ -958,6 +958,7 @@ img.logopata {
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 100%;
 }
 
 .clanek a {
@@ -970,19 +971,28 @@ img.logopata {
 }
 
 .clanek h2{
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
     margin: 260px 0 0 0;
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: #361b08b0;
-    color:white;
+    color: white;
 }
 
 .clanek .anotace{
-    color:white;
-    width: calc(100% - 40px);
-    padding: 0 20px;
+    color: white;
+    width: calc(100% - 80px);
+    padding: 0px 40px 20px 40px;
     background-color: #361b08b0;
-    height: 300px;
+    height: 71px;
+    font-size: 14px;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+.clanek .anotace div{
+    height: 100%;
+    overflow: hidden;
+    line-height: 23px;
 }
 
 .clanekdet h2{
@@ -995,6 +1005,13 @@ img.logopata {
 
 .koncert{
     background-color: #3a2500;
+    height: 100%;
+}
+
+.koncert_foto{
+    height: 100%;
+    width: 45%;
+    float: right;
 }
 
 .koncert h2{
@@ -1019,8 +1036,9 @@ img.logopata {
 }
 
 .koncert img{
-    width: 45%;
-    float: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .strankovac{

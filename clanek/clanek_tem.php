@@ -88,7 +88,7 @@ class clanek_tem extends template
             }
             echo '<a href = "?clanek/vypisdet/id=' . $rad["cla"]->id . '"></a>';
             echo '<h2>' . $rad["cla"]->nadpis . '</h2>';
-            echo '<div class="anotace">' . $rad['cla']->clanek . '</div>';
+            echo '<div class="anotace"><div>' . $rad['cla']->clanek . '</div></div>';
             echo '</div>';
             echo '</div>';
         }
