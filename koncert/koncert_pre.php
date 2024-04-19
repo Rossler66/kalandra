@@ -68,7 +68,7 @@ class koncert_pre extends presenter{
         $servPar["str"] = $param["str"];
         $servPar["poc"] = 15;
         $servPar["order"] = "kon.datum desc";
-        $templPar["data"] = $this->service->seznam($servPar);
+        $templPar["data"] = $this->service->seznamvyp($servPar);
         $templPar["str"] = $param["str"];
         $this->template->vypis($templPar);
     }

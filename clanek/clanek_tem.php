@@ -80,15 +80,19 @@ class clanek_tem extends template
                 echo '</div>';
         */
         foreach ($param["data"] as $rad) {
-            echo '<div class="pole pole2 poleL bcg_bila stin zoom pole_v4">';
+            echo '<div class="pole pole2 poleL bcg_bila stin pole_v4">';
             if (is_array($rad["cla"]->fotky)) {
                 echo '<div class="clanek" style="background-image: url(img/' . $rad["cla"]->fotky[0]["sou"]->celaCesta . ')">';
             } else {
                 echo '<div class="clanek" >';
             }
-            echo '<a href = "?clanek/vypisdet/id=' . $rad["cla"]->id . '"></a>';
+
+
+            echo '<div class="anotace">';
             echo '<h2>' . $rad["cla"]->nadpis . '</h2>';
-            echo '<div class="anotace"><div>' . $rad['cla']->clanek . '</div></div>';
+            echo '<div>' . $rad['cla']->clanek . '</div></div>';
+            echo '<a href = "?clanek/vypisdet/id=' . $rad["cla"]->id . '"></a>';
+
             echo '</div>';
             echo '</div>';
         }
@@ -109,7 +113,7 @@ class clanek_tem extends template
         echo '<div class="obsah" id="obsah">';
         echo '<div class="block  block_standard bcg_pozadi">';
         echo '<div class="container" >';
-        echo '<div class="pole pole1 poleS pole_oblast stin">';
+        echo '<div class="pole pole1 poleS pole_oblast">';
         echo '<div class="clanky">';
         /*
                 echo '<div class="provnab">';

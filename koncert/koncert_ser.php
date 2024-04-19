@@ -32,6 +32,27 @@ class koncert_ser extends service
         return $koncertEnt;
     }
 
+    public function seznamvyp($param)
+    {
+        if($param['str'] == 1) {
+            $sezPar['order'] = "kon.datum";
+            $sezPar['where'] = 'kon.datum >= "' . date("Y-m-d") . '"';
+            $sezPar['limit'] = 999;
+            $koncertEnt1 = $this->nactiSeznam("stranka", "stranka_rep", "web_koncert_foto_rep", $sezPar);
+
+            $sezPar['order'] = "kon.datum desc";
+            $sezPar['where'] = 'kon.datum < "' . date("Y-m-d") . '"';
+            $sezPar['limit'] = 30;
+            $koncertEnt2 = $this->nactiSeznam("stranka", "stranka_rep", "web_koncert_foto_rep", $sezPar);
+            return array_merge($koncertEnt1, $koncertEnt2);
+        }
+        $sezPar['order'] = "kon.datum desc";
+        $sezPar['where'] = 'kon.datum < "' . date("Y-m-d") . '"';
+        $sezPar['offset'] = $param['str']-1;
+        $sezPar['limit'] = 30;
+        return $this->nactiSeznam("stranka", "stranka_rep", "web_koncert_foto_rep", $sezPar);
+    }
+
     public function ctiPolozku($param)
     {
         $sezPar["where"] = "kon.id = " . $param["id"];

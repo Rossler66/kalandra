@@ -87,13 +87,20 @@ class koncert_tem extends template
                 }
                 echo '</div>';
         */
+        $odehrano = false;
         foreach ($param["data"] as $rad) {
+
+            if(!$odehrano && $rad["kon"]->datum < date('Y-m-d')) {
+                $odehrano = true;
+                echo '<h1>Odehráno</h1>';
+            }
+
             echo '<div class="pole pole1 poleM bcg_bila stin pole_v3">';
 
             echo '<div class="koncert" >';
             echo '<a href = "?koncert/vypisdet/id=' . $rad["kon"]->id . '"></a>';
             echo '<div class="texty">';
-            echo '<h2>' . $rad["kon"]->datum . ' ' . $rad["kon"]->cas . '</h2>';
+            echo '<h2>' . $this->dateDb2Txt($rad["kon"]->datum) . ' ' . $rad["kon"]->cas . '</h2>';
             echo '<div class="misto">' . $rad['kon']->misto . '</div>';
 
             echo '<div class="text">' . $rad['kon']->text . '</div>';

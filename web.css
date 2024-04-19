@@ -795,7 +795,7 @@ img.logopata {
     font-size: 12px;
     line-height: 80px;
     padding: 10px;
-    color: #7bc2f5 !important;
+    color: #b36d05 !important;
 }
 
 .pro_zastupce {
@@ -895,7 +895,7 @@ img.logopata {
 
 .provozovna .tlacpas a {
     text-decoration: none;
-    color: #7bc2f5;
+    color: #b36d05;
 }
 
 
@@ -961,6 +961,11 @@ img.logopata {
     height: 100%;
 }
 
+.clanek:hover .anotace{
+    height: 100%;
+    background-color: #361b08d9;
+}
+
 .clanek a {
     position: absolute;
     top: 0;
@@ -971,36 +976,51 @@ img.logopata {
 }
 
 .clanek h2{
-    width: calc(100% - 80px);
-    margin: 260px 0 0 0;
-    padding: 10px 40px;
-    background-color: #361b08b0;
-    color: white;
+    padding: 20px 30px;
+    margin: 0;
+    font-size: 20px;
+    /* width: calc(100% - 80px); */
+    /* margin: 260px 0 0 0; */
+    /* padding: 10px 40px; */
+    /* background-color: #361b08b0; */
+    /* color: white;*/
 }
 
 .clanek .anotace{
-    color: white;
-    width: calc(100% - 80px);
-    padding: 0px 40px 20px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #361b08b0;
-    height: 71px;
-    font-size: 14px;
-    font-weight: 100;
-    overflow: hidden;
+    height: 38%;
+    backdrop-filter: blur(2px);
+    /* color: white; */
+    /* width: calc(100% - 80px); */
+    /* padding: 0px 40px 20px 40px; */
+    /* font-size: 14px; */
+    /* font-weight: 100; */
+    /* overflow: hidden; */
 }
 
 .clanek .anotace div{
-    height: 100%;
+    color: white;
+    height: calc(100% - 79px);
     overflow: hidden;
     line-height: 23px;
+    padding: 0 30px;
 }
 
 .clanekdet h2{
-  color: #3a2500;
+    color: #ffd385;
+    font-weight: 800;
+    margin:40px 0;
 }
 
 .clanekdet .text{
-    margin: 10px 30px 20px 30px;
+    margin: 10px 0 30px 0;
+    color:white;
+    line-height: 32px;
+    text-align: justify;
 }
 
 .koncert{

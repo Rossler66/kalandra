@@ -15,7 +15,8 @@ h2 img{
 }
 
 h3{
-    color:#7ac2f5;
+    color: #774c00;
+    font-weight: 800;
 }
 
 #editbod{
@@ -58,12 +59,12 @@ textarea{
 }
 
 .seznam th{
-    background-color: #7bc2f5;
+    background-color: #dd780f;
     color: white;
 }
 
 .seznam tr:hover{
-    background-color: #7bc2f5;
+    background-color: #dd780f;
 }
 
 .cookiesnas{
@@ -83,11 +84,11 @@ textarea{
 }
 
 .bcg_bledemodra{
-    background-color: #7bc2f5;
+    background-color: #dd780f;
 }
 
 .bcg_tmavomodra{
-    background-color: #005897;
+    background-color: #ffb60a;
 }
 
 .bcg_transparent{
@@ -103,7 +104,7 @@ textarea{
 }
 
 .bcg_bledemodra3{
-    background-color: #7bc2f5c0;
+    background-color: #dd780fc0;
 }
 
 .bcg_tmavomodra3{
@@ -119,11 +120,11 @@ textarea{
 }
 
 .bcg_bledemodra2{
-    background-color: #7bc2f580;
+    background-color: #dd780f80;
 }
 
 .bcg_tmavomodra2{
-    background-color: #00589780;
+    background-color: #ffb60a80;
 }
 
 .bcg_bila1{
@@ -135,11 +136,11 @@ textarea{
 }
 
 .bcg_bledemodra1{
-    background-color: #7bc2f520;
+    background-color: #dd780f20;
 }
 
 .bcg_tmavomodra1{
-    background-color: #00589720;
+    background-color: #ffb60a20;
 }
 
 .bcg_pozadi{
@@ -156,11 +157,11 @@ textarea{
 }
 
 .col_bledemodra{
-    color: #7bc2f5;
+    color: #dd780f;
 }
 
 .col_tmavomodra{
-    color: #005897;
+    color: #977e00;
 }
 
 .col_transparent{
@@ -176,11 +177,11 @@ textarea{
 }
 
 .bor_bledemodra{
-    border:1px solid #7bc2f5;
+    border:1px solid #dd780f;
 }
 
 .bor_tmavomodra{
-    border:1px solid #005897;
+    border:1px solid #a87a00;
 }
 
 .bor_transparent{
@@ -206,7 +207,7 @@ textarea{
 }
 
 .block_pata{
-    background-color: #005897;
+    background-color: #bf9344;
 }
 
 .block_pata a{
